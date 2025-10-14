@@ -1,0 +1,24 @@
+.high1 {
+    background: #0E273C;
+    color: white;
+}
+
+.high2 {
+    background: #56203D;
+    color: white;
+}
+
+p {
+    background: #FCDC4D;
+    color: #BF3100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 25px;
+}
+
+#myotter {
+    width: 250px;
+
+}

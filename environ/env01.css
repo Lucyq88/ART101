@@ -1,0 +1,24 @@
+h1 {background-color: #2e7552;
+    width: 250px;
+    height: 125px;
+    color: white; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;}
+h2 {background-color: #09898a;
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;}
+p {background-color: #484e79;
+    padding: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    position: absolute;
+    top: 225px;
+    right: 10px;}
+#rene {width: 150px;
+    height: 300px;
+    position: relative;
+    top: 190px;
+    left: 700px;}
