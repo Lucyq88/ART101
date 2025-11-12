@@ -41,4 +41,17 @@ $("#button").click(function () {
     showImage("images/eduardo.png", 300, 200, "Help is here!");
 }); 
 
-    
+$("#help").click(function () {
+    const smoke = $("#smoke");
+    smoke.fadeToggle(400, function () {
+        if (smoke.is(":visible")) {
+            function moveSmoke() {
+                smoke.animate({ top: "70px", left: "200px", opacity: 0.9 }, 1500)
+                    .animate({ top: "80px", left: "250px", opacity: 1 }, 1500, moveSmoke);
+            }
+            moveSmoke();
+        } else {
+            smoke.stop(true, true).animate({ top: "200px", left: "700px" }, 400);
+        }
+    });
+});
