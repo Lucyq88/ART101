@@ -28,18 +28,30 @@ megaSentence = megaSentence + "<p> Deep into " + TheSlug.livesIn + " " + theChar
 
 $("#slug").html(megaSentence);
 
+let maxImages = 1;
+let currentImages = 0;
+
 function showImage(src, width, height, alt) {
+
+    if (currentImages >= maxImages) {
+        alert("Thats all the help you can get!");
+        return;
+    }
+
     let img = document.createElement("img");
-    img.src= src;
+    img.src = src;
     img.width = width;
     img.height = height
     img.alt = alt;
 
-    document.body.appendChild (img);
+    document.body.appendChild(img);
+
+    currentImages++; 
 };
 $("#button").click(function () {
     showImage("images/eduardo.png", 300, 200, "Help is here!");
-}); 
+
+});
 
 $("#help").click(function () {
     const smoke = $("#smoke");

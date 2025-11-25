@@ -28,7 +28,16 @@ megaSentence = megaSentence + "<p> Deep into " + TheSlug.livesIn + " " + theChar
 
 $("#slug").html(megaSentence);
 
+let maxImages = 1;
+let currentImages = 0;
+
 function showImage(src, width, height, alt) {
+
+    if (currentImages >= maxImages) {
+        alert("Thats all the help you can get!");
+        return;
+    }
+
     let img = document.createElement("img");
     img.id = "edu";
     img.src = src;
@@ -40,6 +49,7 @@ function showImage(src, width, height, alt) {
     img.style.pointerEvents = "none";
 
     document.body.appendChild(img);
+    currentImages++; 
 };
 $("#button").one("click", function () {
     showImage("images/eduardo.png", 300, 200, "Help is here!");

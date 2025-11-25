@@ -1,18 +1,33 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#title {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
 h1 {
     background-color: #2e7552;
     width: 250px;
-    height: 125px;
+    height: auto;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
 }
 
 h2 {
     background-color: #09898a;
     padding: 10px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     text-align: right;
+}
+
+.text {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
 #output {
@@ -20,11 +35,8 @@ h2 {
     padding: 20px;
     color: white;
     font-size: 13px;
-    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
     text-align: left;
-    position: absolute;
-    width: 250px;
-    margin: 20px
 }
 
 #slug {
@@ -32,41 +44,24 @@ h2 {
     padding: 20px;
     font-size: 13px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     text-align: right;
     width: 350px;
-    margin: 20px;
-}
-
-.text {
-    width: 1100px;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: column;
-    gap: 50px;
 }
 
 #intro {
     background-color: #484e79;
     padding: 20px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     text-align: right;
-    position: absolute;
-    top: 0px;
-    right: 10px;
 }
 
 .images {
-    height: 480px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: flex-end;
 }
+
 #rene {
     height: 300px;
     width: 200px;
