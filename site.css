@@ -3,31 +3,33 @@ BODY {
     padding: 50px;
 }
 
+h1, h2, h3 {
+    font-family: "Momo Trust Display", sans-serif;
+}
 h1 {
-    color: #B20D30;
-    font-family: georgia;
+    color: #FED766;
 }
-
-h2, h3 {
+h2 {
     color: #6B2737;
-    font-family: georgia;
 }
+.navigation h3 {
 
-#introduction h2 {
-    font-style: italic;
-    color: black;
+    color: #ced7ca;
 }
 
 #introduction p {
     color: #ced7ca;
-    font-family: garamond;
+    font-family: "Momo Trust Display", sans-serif;
     font-size: 120%;
+    background-color: #685044;
+    padding: 15px;
 }
 
-ol {
+li {
     color: #ced7ca;
-    font-family: garamond;
-    font-size: 20px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 15px;
+    
 }
 
 #mypic {
@@ -37,4 +39,8 @@ ol {
 .navigation {
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+#first, #second {
+    align-self: flex-start;
 }
